@@ -1,6 +1,6 @@
 <?php 
 $name = "Hiroki" ;
-if ($name = "Hiroki") {
+if ($name == "Hiroki") {
     echo "私は あなたの名前 です" ;
 } else { echo "あなたの名前ではありません" ;
 }
@@ -21,9 +21,9 @@ foreach($fruits as $fruit) {
 
 $start = 1 ;
 $end = 100 ;
-for($i = $start; $i < $end; $i++) {
-    if($i / 5 == 0) {
+for($i = $start; $i <= $end; $i++) {
+    if($i % 5 == 0) {
          echo $i ;
-        
+         echo "\n";
     }
 }
